@@ -13,7 +13,7 @@ Using **Server Manager** on `DC01.itech.local`, I launched the **Add Roles and F
 - Selected the **Web Server (IIS)** role and accepted the required management tools (**IIS Management Console**)
 - Completed the wizard and confirmed the installation finished successfully, including core components such as Common HTTP Features, Health and Diagnostics, and HTTP Logging
 
-![Add Roles and Features Wizard - Before You Begin](images/01-before-you-begin.png)
+![Add Roles and Features Wizard - Before You Begin](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/01-before-you-begin.png)
 ![Selecting Role-based or feature-based Installation](images/02-installation-type.png)
 ![Selecting DC01.itech.local as the Destination Server](images/03-destination-server.png)
 ![Selecting the Web Server (IIS) Role and Adding Management Tools](images/04-select-server-roles.png)
