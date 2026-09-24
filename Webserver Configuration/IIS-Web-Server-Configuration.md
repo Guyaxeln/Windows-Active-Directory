@@ -23,7 +23,7 @@ Using **Server Manager** on `DC01.itech.local`, I launched the **Add Roles and F
 ### 2. ✅ Confirm Installation and Test Default Website
 After installation completed, I opened a browser on the server and navigated to `http://localhost`, confirming the IIS default welcome page loaded successfully.
 
-![IIS Default Page in Browser (localhost)]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/07-iis-default-page-localhost.png)
+![IIS Default Page in Browser (localhost)](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/07-iis-default-page-localhost.png)
 
 ### 3. 🌐 Configure a Custom Website and DNS Record
 To publish a custom internal page:
@@ -33,8 +33,8 @@ To publish a custom internal page:
 - Verified other domain records were already present, including `dc01` and the client record `PC-01` (`192.168.56.102`)
 - Browsed to `http://www.itech.local` and confirmed the custom page rendered correctly
 
-![DNS Manager - www Host (A) Record Added in itech.local Zone]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/12-dns-manager-www-record.png)
-![Custom Page Displayed at www.itech.local]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/13-custom-page-www-itech-local.png)
+![DNS Manager - www Host (A) Record Added in itech.local Zone](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/12-dns-manager-www-record.png)
+![Custom Page Displayed at www.itech.local](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/13-custom-page-www-itech-local.png)
 
 ### 4. 🚀 Create an Additional Site in IIS
 To demonstrate hosting more than one site on the same server, I added a second website:
@@ -45,15 +45,15 @@ To demonstrate hosting more than one site on the same server, I added a second w
 - Binding: `http`, Port: `8080`
 - Confirmed the new site appeared alongside the Default Web Site and started successfully
 
-![IIS Manager - Adding a New Website (testing.local)]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/08-iis-manager-add-website.png)
-![Setting Physical Path]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/09-add-website-browse-folder.png)
-![Setting Port Binding (8080)]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/10-add-website-binding-8080.png)
-![Sites List Showing Default Web Site and testing.local]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/11-sites-list-testing-local.png)
+![IIS Manager - Adding a New Website (testing.local)](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/08-iis-manager-add-website.png)
+![Setting Physical Path](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/09-add-website-browse-folder.png)
+![Setting Port Binding (8080)](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/10-add-website-binding-8080.png)
+![Sites List Showing Default Web Site and testing.local](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/11-sites-list-testing-local.png)
 
 ### 5. 📶 Verify Access from a Domain-Joined Client
 From the domain-joined Windows 10 client (`PC-01`), I opened a browser and navigated to `http://www.itech.local`. The custom page loaded successfully, confirming DNS resolution and LAN accessibility from a client machine.
 
-![Custom Web Page Displayed in Browser on PC-01]([images/](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/14-custom-page-client-pc01.png)
+![Custom Web Page Displayed in Browser on PC-01](https://github.com/Guyaxeln/Windows-Active-Directory/blob/main/Webserver%20Configuration/14-custom-page-client-pc01.png)
 
 ## 📝 Summary
 In this lab, I successfully installed and configured IIS on Windows Server 2022, published a custom web page resolved through an internal DNS record, created a secondary site bound to a custom port, and verified access from a domain-joined Windows 10 client. This exercise demonstrates my ability to:
